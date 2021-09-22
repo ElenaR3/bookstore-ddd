@@ -13,5 +13,11 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/bookstore-orders-ddd</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="bookstore-ddd@localhost [2]" uuid="1aaa23fc-d6dc-4076-8f81-d53c4850e700">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/bookstore-ddd</jdbc-url>
+    </data-source>
   </component>
 </project>
