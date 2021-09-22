@@ -13,6 +13,10 @@ import java.util.List;
 @Entity
 public class Book extends AbstractEntity<BookId> {
 
+    /* Оваа класа е Agregate Root на контекстот кој се однесува на самите книги
+    * како продукти. Ги содржи сите атрибути кои се прикажани и на самиот ER дијаграм,
+    * како и value object-от Money.*/
+
     private String bookName;
     private int yearPublished;
     private String description;

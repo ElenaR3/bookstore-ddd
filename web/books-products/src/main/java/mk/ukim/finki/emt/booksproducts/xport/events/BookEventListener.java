@@ -9,7 +9,8 @@ import mk.ukim.finki.emt.sharedkernel.domain.events.orders.OrderItemCreated;
 import mk.ukim.finki.emt.sharedkernel.domain.events.orders.OrderItemRemoved;
 import org.springframework.kafka.annotation.KafkaListener;
 
-public class BookEventListener { // Listener кој чека да се случи однреден настан, во овој случај креирање на ставка во нарачка
+
+public class BookEventListener { // Listener кој чека да се случи одреден настан, во овој случај креирање/бришење на ставка во нарачка, имплементиран со помош на Кафка message broker
 
     private final BookService bookService;
 
