@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="bookstore-ddd@localhost" uuid="5b5d223b-38f1-4652-b797-081855be8bd4">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/bookstore-ddd</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="bookstore-orders-ddd@localhost" uuid="a9300099-23ba-4ef3-a00b-4eeebb2ae6cd">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/bookstore-orders-ddd</jdbc-url>
+    </data-source>
+  </component>
+</project>
