@@ -7,13 +7,13 @@ const instance = axios.create({
     }
 });
 
-const instanceOrders = axios.create({
+/* const instanceOrders = axios.create({
     baseURL: 'http://localhost:8084/api',
     headers: {
         'Access-Control-Allow-Origin' : '*'
     }
-});
+}); */
 
 export {
-   instance,instanceOrders
+   instance
 };

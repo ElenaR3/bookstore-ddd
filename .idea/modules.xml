@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/web/books-products/books-products.iml" filepath="$PROJECT_DIR$/web/books-products/books-products.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/order-management/order-management.iml" filepath="$PROJECT_DIR$/web/order-management/order-management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/shared-kernel/shared-kernel.iml" filepath="$PROJECT_DIR$/web/shared-kernel/shared-kernel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/users/users.iml" filepath="$PROJECT_DIR$/web/users/users.iml" />
+    </modules>
+  </component>
+</project>

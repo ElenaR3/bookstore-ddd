@@ -22,16 +22,7 @@ class App extends Component {
             <Router>
                 <Header/>
                 <main>
-                    <div className="container">
-                        <Route path={"/products/add"} exact render={() =>
-                            <ProductAdd categories={this.state.categories}
-                                        manufacturers={this.state.manufacturers}
-                                        onAddProduct={this.addProduct}/>}/>
-                        <Route path={"/products/edit/:id"} exact render={() =>
-                            <ProductEdit categories={this.state.categories}
-                                         manufacturers={this.state.manufacturers}
-                                         onEditProduct={this.editProduct}
-                                         product={this.state.selectedProduct}/>}/>
+                    <div className="container">>
                         <Route path={"/products"} exact render={() =>
                             <Products products={this.state.products}
                                       onDelete={this.deleteProduct}
@@ -54,45 +45,6 @@ class App extends Component {
                 this.setState({
                     products: data.data
                 })
-            });
-    }
-
-    loadCategories = () => {
-        EShopService.fetchCategories()
-            .then((data) => {
-                this.setState({
-                    categories: data.data
-                })
-            });
-    }
-
-    deleteProduct = (id) => {
-        EShopService.deleteProduct(id)
-            .then(() => {
-                this.loadProducts();
-            });
-    }
-
-    addProduct = (name, price, quantity, category, manufacturer) => {
-        EShopService.addProduct(name, price, quantity, category, manufacturer)
-            .then(() => {
-                this.loadProducts();
-            });
-    }
-
-    getProduct = (id) => {
-        EShopService.getProduct(id)
-            .then((data) => {
-                this.setState({
-                    selectedProduct: data.data
-                })
-            })
-    }
-
-    editProduct = (id, name, price, quantity, category, manufacturer) => {
-        EShopService.editProduct(id, name, price, quantity, category, manufacturer)
-            .then(() => {
-                this.loadProducts();
             });
     }
 }

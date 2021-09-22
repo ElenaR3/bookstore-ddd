@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/api/product")
 @AllArgsConstructor
-@CrossOrigin(origins = "http://localhost:3000")
 public class BookResource {
 
     private final BookService bookService;

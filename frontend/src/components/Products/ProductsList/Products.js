@@ -28,10 +28,9 @@ class Products extends React.Component {
                             <thead>
                             <tr>
                                 <th scope={"col"}>Name</th>
-                                <th scope={"col"}>Price</th>
-                                <th scope={"col"}>Quantity</th>
-                                <th scope={"col"}>Category</th>
-                                <th scope={"col"}>Manufacturer</th>
+                                <th scope={"col"}>Description</th>
+                                <th scope={"col"}>Amount</th>
+                                <th scope={"col"}>Currency</th>
                             </tr>
                             </thead>
                             <tbody>
